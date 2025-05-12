@@ -6,6 +6,12 @@
   "bin": {
     "@schornio/mcp-server-examples": "bin.js"
   },
+  "files": [
+    "dist/*",
+    "bin.js",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,2 +1,2 @@
-#!/usr/bin/env node --experimental-strip-types
-import "./index.ts";
+#!/usr/bin/env node
+import "./dist/index.js";

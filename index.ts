@@ -1,5 +1,5 @@
-import { runKlimaaktivFoerderungen } from "./examples/klimaaktiv-foerderungen.ts";
-import { runLinzInnoHpMCP } from "./examples/linz-inno-hp.ts";
+import { runKlimaaktivFoerderungen } from "./examples/klimaaktiv-foerderungen.js";
+import { runLinzInnoHpMCP } from "./examples/linz-inno-hp.js";
 
 const mcps = new Map([
   ["linz-inno-hp", runLinzInnoHpMCP],

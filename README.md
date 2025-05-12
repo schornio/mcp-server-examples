@@ -9,7 +9,7 @@ Quelle: [https://partizipation.linz.at/de-DE/projects/proposals](https://partizi
 ### Ausführen
 
 ```bash
-npx @schornio/mcp-server-examples linz-inno-hp
+npx @schornio/mcp-server-examples@latest linz-inno-hp
 ```
 
 ### schorn.ai in a Box Konfiguration
@@ -18,7 +18,7 @@ npx @schornio/mcp-server-examples linz-inno-hp
 {
     "command": "npx",
     "args": [
-        "@schornio/mcp-server-examples",
+        "@schornio/mcp-server-examples@latest",
         "linz-inno-hp"
     ]
 }
@@ -31,7 +31,7 @@ Quelle: [https://www.klimaaktiv.at/foerderungen](https://www.klimaaktiv.at/foerd
 ### Ausführen
 
 ```bash
-npx @schornio/mcp-server-examples klimaaktiv-foerderungen
+npx @schornio/mcp-server-examples@latest klimaaktiv-foerderungen
 ```
 
 ### schorn.ai in a Box Konfiguration
@@ -40,7 +40,7 @@ npx @schornio/mcp-server-examples klimaaktiv-foerderungen
 {
     "command": "npx",
     "args": [
-        "@schornio/mcp-server-examples",
+        "@schornio/mcp-server-examples@latest",
         "klimaaktiv-foerderungen"
     ]
 }
@@ -68,10 +68,16 @@ npx @schornio/mcp-server-examples klimaaktiv-foerderungen
         "inz-inno-hp": {
             "command": "npx",
             "args": [
-                "@schornio/mcp-server-examples",
+                "@schornio/mcp-server-examples@latest",
                 "linz-inno-hp"
             ]
         }
     }
 }
 ```
+
+## Publish new version
+
+1. `npm version major/minor/patch`
+2. `npm run build`
+3. `npm publish --access public`

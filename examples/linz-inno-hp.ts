@@ -5,28 +5,28 @@ import { z } from "zod";
 export const MCP_SERVER_NAME = "Innovationshauptplatz Linz";
 export const MCP_SERVER_VERSION = "1.0.0";
 
+const STATUS = new Map([
+  ["submitted", "c4b79ddc-99e4-4643-8c7e-d77a68b78863"],
+  ["threshold_reached", "27a5c84b-44c3-4382-af89-ec60ae2576ab"],
+  ["expired", "9d2bb2e7-d51d-4134-9832-afdb66104b77"],
+  ["answered", "2f0fc4b0-5ce6-4f79-aaac-908dd87ae9da"],
+  ["inadmissible", "31db10fb-c128-4e7c-a44a-c2a1e5f58bd4"],
+]);
+
+const SORT = new Map([
+  ["most_reactions", "popular"],
+  ["most_discussed", "comments_count"],
+  ["popular", "trending"],
+  ["random", "random"],
+  ["newest", "new"],
+  ["oldest", "-new"],
+]);
+
 export async function runLinzInnoHpMCP() {
   const server = new McpServer({
     name: MCP_SERVER_NAME,
     version: MCP_SERVER_VERSION,
   });
-
-  const STATUS = new Map([
-    ["submitted", "c4b79ddc-99e4-4643-8c7e-d77a68b78863"],
-    ["threshold_reached", "27a5c84b-44c3-4382-af89-ec60ae2576ab"],
-    ["expired", "9d2bb2e7-d51d-4134-9832-afdb66104b77"],
-    ["answered", "2f0fc4b0-5ce6-4f79-aaac-908dd87ae9da"],
-    ["inadmissible", "31db10fb-c128-4e7c-a44a-c2a1e5f58bd4"],
-  ]);
-
-  const SORT = new Map([
-    ["most_reactions", "popular"],
-    ["most_discussed", "comments_count"],
-    ["popular", "trending"],
-    ["random", "random"],
-    ["newest", "new"],
-    ["oldest", "-new"],
-  ]);
 
   server.tool(
     "find_proposal",

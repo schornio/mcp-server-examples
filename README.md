@@ -46,6 +46,33 @@ npx @schornio/mcp-server-examples@latest klimaaktiv-foerderungen
 }
 ```
 
+## Firmenbuch
+
+Quelle: [https://justizonline.gv.at/jop/web/iwg](https://justizonline.gv.at/jop/web/iwg)
+
+`FIRMENBUCH_API_KEY` bekommt man unter [https://justizonline.gv.at/jop/secure/web/iwg/register](https://justizonline.gv.at/jop/secure/web/iwg/register)
+
+### Ausführen
+
+```bash
+npx @schornio/mcp-server-examples@latest firmenbuch
+```
+
+### schorn.ai in a Box Konfiguration
+
+```json
+{
+    "command": "npx",
+    "args": [
+        "@schornio/mcp-server-examples@latest",
+        "firmenbuch"
+    ],
+    "env": {
+        "FIRMENBUCH_API_KEY": "<HIER EINGEBEN>"
+    }
+}
+```
+
 ## Benutzen mit Claude
 
 "schorn.ai in a Box Konfiguration" in folgendes JSON einbetten:

@@ -1,9 +1,11 @@
+import { runFirmenbuch } from "./examples/firmenbuch.js";
 import { runKlimaaktivFoerderungen } from "./examples/klimaaktiv-foerderungen.js";
 import { runLinzInnoHpMCP } from "./examples/linz-inno-hp.js";
 
 const mcps = new Map([
   ["linz-inno-hp", runLinzInnoHpMCP],
   ["klimaaktiv-foerderungen", runKlimaaktivFoerderungen],
+  ["firmenbuch", runFirmenbuch],
 ]);
 
 async function main() {

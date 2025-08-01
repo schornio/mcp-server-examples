@@ -45,7 +45,7 @@ function createResponse(text: string) {
   };
 }
 
-export async function runFirmenbuch() {
+export async function runPhilipsHue() {
   const server = new McpServer({
     name: MCP_SERVER_NAME,
     version: MCP_SERVER_VERSION,

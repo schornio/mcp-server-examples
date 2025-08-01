@@ -52,7 +52,7 @@ export async function runPhilipsHue() {
   });
 
   const hueBridgeAddress = process.env.PHILIPS_HUE_BRIDGE_ADDRESS ?? "";
-  const apiKey = process.env.FIRMENBUCH_API_KEY ?? "";
+  const apiKey = process.env.PHILIPS_HUE_API_KEY ?? "";
   const lightIds = process.env.PHILIPS_HUE_LIGHT_IDS?.split(",") ?? [];
 
   server.tool(
